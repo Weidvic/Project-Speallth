@@ -1,4 +1,4 @@
-﻿Log file open, 01/18/19 09:58:02
+﻿Log file open, 01/18/19 10:15:32
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -10,7 +10,7 @@ LogInit: Display: Running engine for game: Project_Spellth
 LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 47 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.522746
+LogStats: Stats thread started at 0.524337
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -94,7 +94,7 @@ LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.072s to configure plugins.
+LogStreaming: Display: Took  0.069s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -154,582 +154,651 @@ LogInit: Presizing for max 8388607 objects, including 0 objects not considered b
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.MobileHDR:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.Mobile.DisableVertexFog:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxMobileCascades:2]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.MobileMSAA:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.Mobile.UseLegacyShadingModel:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.DiscardUnusedQuality:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.AllowOcclusionQueries:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForLights:0.030000]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForDepthPrepass:0.030000]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForCSMDepth:0.010000]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.PrecomputedVisibilityWarning:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.TextureStreaming:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[Compat.UseDXT5NormalMaps:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.ClearCoatNormal:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.ReflectionCaptureResolution:128]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.ReflectionEnvironmentLightmapMixBasedOnRoughness:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.ForwardShading:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.VertexFoggingForOpaque:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.NormalMapsForStaticLighting:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.GenerateMeshDistanceFields:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.EightBit:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.GenerateLandscapeGIData:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.Compress:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.TessellationAdaptivePixelsPerTriangle:48.000000]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.TranslucentSortPolicy:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.CustomDepth:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.CustomDepthTemporalAAJitter:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.PostProcessing.PropagateAlpha:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.DOF.Algorithm:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.UsePreExposure:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.DefaultFeature.Bloom:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:1]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Method:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.DefaultFeature.MotionBlur:0]]
-[2019.01.18-08.58.03:154][  0]LogConfig: Setting CVar [[r.DefaultFeature.LensFlare:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.TemporalAA.Upsampling:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.DefaultFeature.AntiAliasing:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.DefaultBackBufferPixelFormat:4]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.Shadow.UnbuiltPreviewInGame:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.StencilForLODDither:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.EarlyZPass:3]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.EarlyZPassMovable:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.EarlyZPassOnlyMaterialMasking:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.DBuffer:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.ClearSceneMethod:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.BasePassOutputsVelocity:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.SelectiveBasePassOutputs:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeX:1024]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeY:1024]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.AllowGlobalClipPlane:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.GBufferFormat:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.MorphTarget.Mode:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[vr.InstancedStereo:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[vr.MultiView:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[vr.MobileMultiView:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[vr.MobileMultiView.Direct:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[vr.MonoscopicFarField:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[vr.ODSCapture:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.WireframeCullThreshold:5.000000]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.SupportStationarySkylight:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.SupportLowQualityLightmaps:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.SupportPointLightWholeSceneShadows:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.SupportAtmosphericFog:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.Mobile.EnableStaticAndCSMShadowReceivers:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableLightCSMShaderCulling:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.Mobile.AllowDistanceFieldShadows:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.Mobile.AllowMovableDirectionalLights:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.MobileNumDynamicPointLights:4]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.MobileDynamicPointLightsUseStaticBranch:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.SkinCache.SceneMemoryLimitInMB:128.000000]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.GPUSkin.Limit2BoneInfluences:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.SupportDepthOnlyIndexBuffers:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.SupportReversedIndexBuffers:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[r.SupportMaterialLayers:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
-[2019.01.18-08.58.03:155][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2019.01.18-08.58.03:155][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2019.01.18-08.58.03:156][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
-[2019.01.18-08.58.03:156][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
-[2019.01.18-08.58.03:160][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.01.18-08.58.03:160][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.01.18-08.58.03:161][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.01.18-08.58.03:162][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.01.18-08.58.03:162][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.01.18-08.58.03:162][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.01.18-08.58.03:162][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.01.18-08.58.03:162][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.01.18-08.58.03:162][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:162][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.01.18-08.58.03:162][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.01.18-08.58.03:162][  0]LogInit: Selected Device Profile: [Windows]
-[2019.01.18-08.58.03:162][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2019.01.18-08.58.03:182][  0]LogHAL: Display: Platform has ~ 32 GB [34304196608 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2019.01.18-08.58.03:182][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
-[2019.01.18-08.58.03:182][  0]LogInit: Going up to parent DeviceProfile []
-[2019.01.18-08.58.03:182][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:182][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.01.18-08.58.03:182][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.01.18-08.58.03:182][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:182][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.01.18-08.58.03:182][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:182][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.01.18-08.58.03:182][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.01.18-08.58.03:182][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.01.18-08.58.03:182][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.01.18-08.58.03:182][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.01.18-08.58.03:183][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2019.01.18-08.58.03:184][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2019.01.18-08.58.03:184][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
-[2019.01.18-08.58.03:184][  0]LogInit: Computer: DESKTOP-LLJMLRC
-[2019.01.18-08.58.03:184][  0]LogInit: User: VictorWeidar
-[2019.01.18-08.58.03:184][  0]LogInit: CPU Page size=4096, Cores=8
-[2019.01.18-08.58.03:185][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2019.01.18-08.58.03:185][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
-[2019.01.18-08.58.03:185][  0]LogMemory: Platform Memory Stats for Windows
-[2019.01.18-08.58.03:185][  0]LogMemory: Process Physical Memory: 105.00 MB used, 105.01 MB peak
-[2019.01.18-08.58.03:185][  0]LogMemory: Process Virtual Memory: 91.37 MB used, 91.37 MB peak
-[2019.01.18-08.58.03:185][  0]LogMemory: Physical Memory: 4421.43 MB used,  28293.61 MB free, 32715.03 MB total
-[2019.01.18-08.58.03:185][  0]LogMemory: Virtual Memory: 4683.16 MB used,  134213048.00 MB free, 134217728.00 MB total
-[2019.01.18-08.58.03:201][  0]LogInit: Using OS detected language (en-US).
-[2019.01.18-08.58.03:201][  0]LogInit: Using OS detected locale (en-SE).
-[2019.01.18-08.58.03:202][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2019.01.18-08.58.03:522][  0]LogStreaming: Display: Took  0.321s to InitEngineTextLocalization.
-[2019.01.18-08.58.03:523][  0]LogInit: Setting process to per monitor DPI aware
-[2019.01.18-08.58.03:548][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2019.01.18-08.58.03:548][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2019.01.18-08.58.03:704][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.01.18-08.58.03:704][  0]LogD3D11RHI: D3D11 adapters:
-[2019.01.18-08.58.03:748][  0]LogD3D11RHI:    0. 'Radeon RX 580 Series' (Feature Level 11_0)
-[2019.01.18-08.58.03:749][  0]LogD3D11RHI:       8172/0/16357 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
-[2019.01.18-08.58.03:751][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2019.01.18-08.58.03:751][  0]LogD3D11RHI:       0/0/16357 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2019.01.18-08.58.03:751][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2019.01.18-08.58.03:758][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2019.01.18-08.58.03:758][  0]LogD3D11RHI:     GPU DeviceId: 0x67df (for the marketing name, search the web for "GPU Device Id")
-[2019.01.18-08.58.03:758][  0]LogWindows: EnumDisplayDevices:
-[2019.01.18-08.58.03:758][  0]LogWindows:    0. 'Radeon RX 580 Series' (P:1 D:1)
-[2019.01.18-08.58.03:758][  0]LogWindows:    1. 'Radeon RX 580 Series' (P:0 D:0)
-[2019.01.18-08.58.03:758][  0]LogWindows:    2. 'Radeon RX 580 Series' (P:0 D:0)
-[2019.01.18-08.58.03:759][  0]LogWindows:    3. 'Radeon RX 580 Series' (P:0 D:0)
-[2019.01.18-08.58.03:759][  0]LogWindows:    4. 'Radeon RX 580 Series' (P:0 D:0)
-[2019.01.18-08.58.03:759][  0]LogWindows:    5. 'Radeon RX 580 Series' (P:0 D:0)
-[2019.01.18-08.58.03:759][  0]LogWindows:    6. 'Radeon RX 580 Series' (P:0 D:0)
-[2019.01.18-08.58.03:760][  0]LogWindows:    7. 'Radeon RX 580 Series' (P:0 D:0)
-[2019.01.18-08.58.03:760][  0]LogWindows: DebugString: FoundDriverCount:8 
-[2019.01.18-08.58.03:760][  0]LogD3D11RHI:     Adapter Name: Radeon RX 580 Series
-[2019.01.18-08.58.03:760][  0]LogD3D11RHI:   Driver Version: Adrenalin 2019 18.12.3 (internal:25.20.15003.5010, unified:25.20.15003.5010)
-[2019.01.18-08.58.03:760][  0]LogD3D11RHI:      Driver Date: 12-17-2018
-[2019.01.18-08.58.03:760][  0]LogRHI: Texture pool is 5720 MB (70% of 8172 MB)
-[2019.01.18-08.58.03:808][  0]LogD3D11RHI: Async texture creation enabled
-[2019.01.18-08.58.03:820][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
-[2019.01.18-08.58.04:104][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2019.01.18-08.58.04:117][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2019.01.18-08.58.04:130][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2019.01.18-08.58.04:142][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2019.01.18-08.58.04:156][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2019.01.18-08.58.04:169][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2019.01.18-08.58.04:182][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2019.01.18-08.58.04:195][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2019.01.18-08.58.04:202][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:279][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.18-08.58.04:280][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2019.01.18-08.58.04:349][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.01.18-08.58.04:349][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.01.18-08.58.04:372][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.01.18-08.58.04:372][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.01.18-08.58.04:384][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2019.01.18-08.58.04:396][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2019.01.18-08.58.04:408][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2019.01.18-08.58.04:421][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2019.01.18-08.58.04:464][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.01.18-08.58.04:464][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.01.18-08.58.04:464][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2019.01.18-08.58.04:508][  0]LogShaderCompilers: Guid format shader working directory is -45 characters bigger than the processId version (../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Intermediate/Shaders/WorkingDirectory/8136/).
-[2019.01.18-08.58.04:508][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Victor Weidar/AppData/Local/Temp/UnrealShaderWorkingDir/D566AA4543A36F2044FD80B273F8A5D1/'.
-[2019.01.18-08.58.04:510][  0]LogXGEController: Cleaning working directory: C:/Users/Victor Weidar/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2019.01.18-08.58.04:510][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2019.01.18-08.58.04:510][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2019.01.18-08.58.04:510][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2019.01.18-08.58.04:980][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2019.01.18-08.58.05:019][  0]LogDerivedDataCache: Loaded boot cache 0.04s 71MB C:/Users/Victor Weidar/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2019.01.18-08.58.05:020][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Victor Weidar/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
-[2019.01.18-08.58.05:020][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2019.01.18-08.58.05:020][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2019.01.18-08.58.05:020][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.01.18-08.58.05:020][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2019.01.18-08.58.05:031][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2019.01.18-08.58.05:031][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.01.18-08.58.05:031][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2019.01.18-08.58.05:043][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Victor Weidar/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2019.01.18-08.58.05:043][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2019.01.18-08.58.05:043][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2019.01.18-08.58.05:063][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2019.01.18-08.58.05:064][  0]LogSlate: Using FreeType 2.6.0
-[2019.01.18-08.58.05:065][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.01.18-08.58.05:140][  0]LogAssetRegistry: FAssetRegistry took 0.0333 seconds to start up
-[2019.01.18-08.58.05:428][  0]LogInit: Selected Device Profile: [Windows]
-[2019.01.18-08.58.05:581][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2019.01.18-08.58.05:584][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2019.01.18-08.58.05:584][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2019.01.18-08.58.05:584][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2019.01.18-08.58.05:584][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2019.01.18-08.58.05:595][  0]LogNetVersion: Project_Spellth 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 649626407)
-[2019.01.18-08.58.06:075][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.098161 seconds
-[2019.01.18-08.58.06:082][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
-[2019.01.18-08.58.06:082][  0]LogUObjectAllocator: 6914656 out of 0 bytes used by permanent object pool.
-[2019.01.18-08.58.06:082][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2019.01.18-08.58.06:835][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2019.01.18-08.58.06:849][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2019.01.18-08.58.07:411][  0]SourceControl: Source control is disabled
-[2019.01.18-08.58.07:973][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2019.01.18-08.58.08:048][  0]LogOcInput: OculusInput pre-init called
-[2019.01.18-08.58.08:193][  0]LogEngine: Initializing Engine...
-[2019.01.18-08.58.08:194][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.01.18-08.58.08:195][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.01.18-08.58.08:195][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.01.18-08.58.08:195][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.01.18-08.58.08:195][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.01.18-08.58.08:434][  0]LogInit: Initializing FReadOnlyCVARCache
-[2019.01.18-08.58.08:450][  0]LogAIModule: Creating AISystem for world Untitled
-[2019.01.18-08.58.08:469][  0]LogInit: XAudio2 using '4 - 2460G4 (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2019.01.18-08.58.08:501][  0]LogInit: FAudioDevice initialized.
-[2019.01.18-08.58.08:501][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2019.01.18-08.58.08:585][  0]LogDerivedDataCache: Saved boot cache 0.08s 71MB C:/Users/Victor Weidar/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2019.01.18-08.58.08:594][  0]LogInit: Texture streaming: Enabled
-[2019.01.18-08.58.08:609][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2019.01.18-08.58.08:619][  0]LogInit: Transaction tracking system initialized
-[2019.01.18-08.58.08:640][  0]BlueprintLog: New page: Editor Load
-[2019.01.18-08.58.08:708][  0]LocalizationService: Localization service is disabled
-[2019.01.18-08.58.09:126][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Content/' took 0.02s
-[2019.01.18-08.58.09:126][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2019.01.18-08.58.09:126][  0]LogCook: Display: Mobile HDR setting 1
-[2019.01.18-08.58.09:126][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2019.01.18-08.58.09:126][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.01.18-08.58.09:126][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.01.18-08.58.09:126][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.01.18-08.58.09:126][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.01.18-08.58.09:246][  0]LightingResults: New page: Lighting Build
-[2019.01.18-08.58.09:248][  0]MapCheck: New page: Map Check
-[2019.01.18-08.58.09:248][  0]LightingResults: New page: Lighting Build
-[2019.01.18-08.58.09:707][  0]LogAIModule: Creating AISystem for world Minimal_Default
-[2019.01.18-08.58.09:716][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.01.18-08.58.09:756][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.01.18-08.58.09:757][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.158ms to complete.
-[2019.01.18-08.58.09:757][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.511
-[2019.01.18-08.58.09:859][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.18-08.58.09:865][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.18-08.58.09:872][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.18-08.58.09:878][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.18-08.58.09:883][  0]LogCollectionManager: Loaded 0 collections in 0.001371 seconds
-[2019.01.18-08.58.09:898][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Collections/' took 0.01s
-[2019.01.18-08.58.09:898][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Content/Developers/VictorWeidar/Collections/' took 0.00s
-[2019.01.18-08.58.09:898][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Content/Collections/' took 0.00s
-[2019.01.18-08.58.09:898][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2019.01.18-08.58.09:907][  0]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 2651 classes and 620 folders.
-[2019.01.18-08.58.09:912][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2019.01.18-08.58.09:913][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:914][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:914][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:915][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:915][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:915][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:916][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:916][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:916][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:917][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:917][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:917][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:918][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:918][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:918][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:919][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:919][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:920][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:920][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:920][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:921][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:921][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:921][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:922][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:922][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:923][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.18-08.58.09:949][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2019.01.18-08.58.09:956][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0003 seconds. Added 2 classes and 3 folders.
-[2019.01.18-08.58.09:961][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2019.01.18-08.58.09:973][  0]LogSlate: Took 0.000195 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2019.01.18-08.58.09:978][  0]LogSlate: Took 0.000225 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2019.01.18-08.58.09:984][  0]LogSlate: Took 0.000175 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2019.01.18-08.58.10:072][  0]LogRenderer: Reallocating scene render targets to support 1064x576 Format 10 NumSamples 1 (Frame:1).
-[2019.01.18-08.58.10:204][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2019.01.18-08.58.10:204][  0]LogLoad: (Engine Initialization) Total time: 9.09 seconds
-[2019.01.18-08.58.10:204][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2019.01.18-08.58.10:263][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2019.01.18-08.58.10:288][  0]LogSlate: Took 0.000131 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.01.18-08.58.10:442][  3]LogAssetRegistry: Asset discovery search completed in 5.3242 seconds
-[2019.01.18-08.58.10:444][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2019.01.18-08.58.10:444][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000053 seconds (updated 0 objects)
-[2019.01.18-08.58.11:239][ 95]LogSlate: Took 0.000128 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.01.18-08.58.15:828][635]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.18-08.58.27:981][ 82]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.18-08.58.28:206][107]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/ProjectSpellth/Blueprints/AI/Enemies/Patroller/AIC_EnemyPathFollower.AIC_EnemyPathFollower
-[2019.01.18-08.58.28:626][107]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 117 classes and 0 folders.
-[2019.01.18-08.58.29:529][107]LogSlate: Took 0.000207 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2019.01.18-08.58.29:600][108]LogSlate: Took 0.000192 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2019.01.18-08.58.51:116][552]BlueprintLog: New page: Compile AIC_EnemyPathFollower
-[2019.01.18-08.58.51:802][592]LogSavePackage: Moving '../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/AIC_EnemyPathFollower18E5A5AB4A15F1E0CD9F248DAF61033F.tmp' to '../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Content/ProjectSpellth/Blueprints/AI/Enemies/Patroller/AIC_EnemyPathFollower.uasset'
-[2019.01.18-08.58.56:170][ 78]LogSlate: Window 'AIC_EnemyPathFollower' being destroyed
-[2019.01.18-08.58.58:942][404]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.18-08.58.59:074][419]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/ProjectSpellth/Blueprints/AI/Enemies/Patroller/AI_EnemyGuard.AI_EnemyGuard
-[2019.01.18-08.59.08:055][435]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.18-08.59.08:215][453]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/ProjectSpellth/Blueprints/AI/Enemies/Standard/AI_EnemyArcher.AI_EnemyArcher
-[2019.01.18-08.59.14:260][113]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.18-08.59.21:601][981]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.18-09.03.43:625][455]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Victor Weidar/Desktop/Models/Crossbow.fbx)
-[2019.01.18-09.03.43:637][455]LogFbx: Loading FBX Scene from ../../../../../../Users/Victor Weidar/Desktop/Models/Crossbow.fbx
-[2019.01.18-09.03.43:643][455]LogFbx: FBX Scene Loaded Succesfully
-[2019.01.18-09.03.47:157][455]LogSlate: Window 'FBX Import Options' being destroyed
-[2019.01.18-09.03.47:342][455]LogMaterial: Display: Missing cached shader map for material Material, compiling. 
-[2019.01.18-09.03.47:381][455]LogFbx: Warning: Triangulating static mesh Cube
-[2019.01.18-09.03.47:391][455]LogShaderCompilers: Display: Shaders left to compile 22
-[2019.01.18-09.03.47:391][455]LogShaderCompilers: Display: Shaders left to compile 12
-[2019.01.18-09.03.47:391][455]LogShaderCompilers: Display: Shaders left to compile 2
-[2019.01.18-09.03.47:393][455]LogStaticMesh: Building static mesh Crossbow...
-[2019.01.18-09.03.47:397][455]LogStaticMesh: Built static mesh [0.00s] /Game/ProjectSpellth/Placeholders/Crossbow/Crossbow.Crossbow
-[2019.01.18-09.03.47:411][455]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2019.01.18-09.03.48:687][575]LogSlate: Window 'Message Log' being destroyed
-[2019.01.18-09.03.48:691][575]LogSlate: Window 'Message Log' being destroyed
-[2019.01.18-09.03.50:083][728]LogActorFactory: Actor Factory created Crossbow
-[2019.01.18-09.03.51:121][842]LogActorFactory: Actor Factory created Crossbow
-[2019.01.18-09.03.51:444][873]Cmd: TRANSACTION UNDO
-[2019.01.18-09.03.51:444][873]LogEditorTransaction: Undo Create Actors
-[2019.01.18-09.03.52:197][944]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.18-09.03.54:580][ 57]LogSlate: Window 'Delete Assets' being destroyed
-[2019.01.18-09.04.24:492][438]LogSlate: Window 'Delete Assets' being destroyed
-[2019.01.18-09.04.27:417][555]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Victor Weidar/Desktop/Models/Crossbow1.fbx)
-[2019.01.18-09.04.27:426][555]LogFbx: Loading FBX Scene from ../../../../../../Users/Victor Weidar/Desktop/Models/Crossbow1.fbx
-[2019.01.18-09.04.27:432][555]LogFbx: FBX Scene Loaded Succesfully
-[2019.01.18-09.04.29:175][555]LogSlate: Window 'FBX Import Options' being destroyed
-[2019.01.18-09.04.29:216][555]LogMaterial: Display: Missing cached shader map for material Material, compiling. 
-[2019.01.18-09.04.29:235][555]LogFbx: Warning: Triangulating static mesh Cube
-[2019.01.18-09.04.29:243][555]LogShaderCompilers: Display: Shaders left to compile 22
-[2019.01.18-09.04.29:243][555]LogShaderCompilers: Display: Shaders left to compile 12
-[2019.01.18-09.04.29:243][555]LogShaderCompilers: Display: Shaders left to compile 2
-[2019.01.18-09.04.29:246][555]LogStaticMesh: Building static mesh Crossbow1...
-[2019.01.18-09.04.29:247][555]LogStaticMesh: Built static mesh [0.00s] /Game/ProjectSpellth/Placeholders/Crossbow/Crossbow1.Crossbow1
-[2019.01.18-09.04.29:262][555]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2019.01.18-09.04.31:356][766]LogSlate: Window 'Message Log' being destroyed
-[2019.01.18-09.04.31:358][766]LogSlate: Window 'Message Log' being destroyed
-[2019.01.18-09.04.33:682][ 26]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.18-09.04.33:850][ 45]LogActorFactory: Actor Factory created Crossbow1
-[2019.01.18-09.04.34:799][155]LogActorFactory: Actor Factory created Crossbow1
-[2019.01.18-09.04.36:486][343]LogActorFactory: Actor Factory created Crossbow1
-[2019.01.18-09.04.41:524][888]Cmd: TRANSACTION UNDO
-[2019.01.18-09.04.41:524][888]LogEditorTransaction: Undo Move Actors
-[2019.01.18-09.04.42:621][990]Cmd: TRANSACTION UNDO
-[2019.01.18-09.04.42:621][990]LogEditorTransaction: Undo Create Actors
-[2019.01.18-09.05.21:233][321]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.01.18-09.05.26:968][702]LogSlate: Window 'Delete Assets' being destroyed
-[2019.01.18-09.05.29:755][788]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/Victor Weidar/Desktop/Models/Crossbow2.fbx)
-[2019.01.18-09.05.29:770][788]LogFbx: Loading FBX Scene from ../../../../../../Users/Victor Weidar/Desktop/Models/Crossbow2.fbx
-[2019.01.18-09.05.29:778][788]LogFbx: FBX Scene Loaded Succesfully
-[2019.01.18-09.05.30:930][788]LogSlate: Window 'FBX Import Options' being destroyed
-[2019.01.18-09.05.30:970][788]LogMaterial: Display: Missing cached shader map for material Material, compiling. 
-[2019.01.18-09.05.30:981][788]LogFbx: Warning: Triangulating static mesh Cube
-[2019.01.18-09.05.30:989][788]LogShaderCompilers: Display: Shaders left to compile 22
-[2019.01.18-09.05.30:989][788]LogShaderCompilers: Display: Shaders left to compile 12
-[2019.01.18-09.05.30:989][788]LogShaderCompilers: Display: Shaders left to compile 2
-[2019.01.18-09.05.30:992][788]LogStaticMesh: Building static mesh Crossbow2...
-[2019.01.18-09.05.30:995][788]LogStaticMesh: Built static mesh [0.00s] /Game/ProjectSpellth/Placeholders/Crossbow/Crossbow2.Crossbow2
-[2019.01.18-09.05.31:009][788]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2019.01.18-09.05.33:184][ 10]LogSlate: Window 'Message Log' being destroyed
-[2019.01.18-09.05.33:186][ 10]LogSlate: Window 'Message Log' being destroyed
-[2019.01.18-09.05.34:139][109]LogActorFactory: Actor Factory created Crossbow2
-[2019.01.18-09.05.35:359][247]LogActorFactory: Actor Factory created Crossbow2
-[2019.01.18-09.06.04:714][531]Cmd: DELETE
-[2019.01.18-09.06.04:715][531]Cmd: ACTOR DELETE
-[2019.01.18-09.06.04:719][531]LogEditorActor: Deleted Actor: StaticMeshActor
-[2019.01.18-09.06.04:752][531]LogEditorActor: Deleted 1 Actors (0.036 secs)
-[2019.01.18-09.06.06:111][674]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.18-09.06.07:260][682]LogSlate: Window 'Save Content' being destroyed
-[2019.01.18-09.06.07:447][682]LogSavePackage: Moving '../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Crossbow23E43C97B43689704E66BB0B3E790819A.tmp' to '../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Content/ProjectSpellth/Placeholders/Crossbow/Crossbow2.uasset'
-[2019.01.18-09.06.07:662][682]LogSavePackage: Moving '../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Material1163608F41E9694F56C9D097C7CB9027.tmp' to '../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Content/ProjectSpellth/Placeholders/Crossbow/Material.uasset'
-[2019.01.18-09.06.08:072][682]LogSavePackage: Moving '../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Minimal_DefaultAF6F3DFC4BF5EA73EA3FE78B9F8175E6.tmp' to '../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Content/StarterContent/Maps/Minimal_Default.umap'
-[2019.01.18-09.06.08:112][682]LogFileHelpers: Saving map 'Minimal_Default' took 0.283
-[2019.01.18-09.06.09:427][834]SourceControl: fatal: C:/Program Files/Epic Games/UE_4.21/Engine/Content: 'C:/Program Files/Epic Games/UE_4.21/Engine/Content' is outside repository
-[2019.01.18-09.06.09:530][834]EditorErrors: Warning: No assets to check in!
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.MobileHDR:1]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.Mobile.DisableVertexFog:1]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxMobileCascades:2]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.MobileMSAA:1]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.Mobile.UseLegacyShadingModel:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.DiscardUnusedQuality:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.AllowOcclusionQueries:1]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForLights:0.030000]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForDepthPrepass:0.030000]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForCSMDepth:0.010000]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.PrecomputedVisibilityWarning:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.TextureStreaming:1]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[Compat.UseDXT5NormalMaps:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.ClearCoatNormal:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.ReflectionCaptureResolution:128]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.ReflectionEnvironmentLightmapMixBasedOnRoughness:1]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.ForwardShading:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.VertexFoggingForOpaque:1]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.NormalMapsForStaticLighting:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.GenerateMeshDistanceFields:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.EightBit:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.GenerateLandscapeGIData:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.Compress:0]]
+[2019.01.18-09.15.32:860][  0]LogConfig: Setting CVar [[r.TessellationAdaptivePixelsPerTriangle:48.000000]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.TranslucentSortPolicy:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.CustomDepth:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.CustomDepthTemporalAAJitter:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.PostProcessing.PropagateAlpha:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.DOF.Algorithm:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.UsePreExposure:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.DefaultFeature.Bloom:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Method:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.DefaultFeature.MotionBlur:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.DefaultFeature.LensFlare:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.TemporalAA.Upsampling:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.DefaultFeature.AntiAliasing:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.DefaultBackBufferPixelFormat:4]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.Shadow.UnbuiltPreviewInGame:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.StencilForLODDither:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.EarlyZPass:3]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.EarlyZPassMovable:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.EarlyZPassOnlyMaterialMasking:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.DBuffer:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.ClearSceneMethod:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.BasePassOutputsVelocity:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.SelectiveBasePassOutputs:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeX:1024]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeY:1024]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.AllowGlobalClipPlane:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.GBufferFormat:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.MorphTarget.Mode:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[vr.InstancedStereo:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[vr.MultiView:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[vr.MobileMultiView:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[vr.MobileMultiView.Direct:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[vr.MonoscopicFarField:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[vr.ODSCapture:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.WireframeCullThreshold:5.000000]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.SupportStationarySkylight:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.SupportLowQualityLightmaps:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.SupportPointLightWholeSceneShadows:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.SupportAtmosphericFog:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.Mobile.EnableStaticAndCSMShadowReceivers:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableLightCSMShaderCulling:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.Mobile.AllowDistanceFieldShadows:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.Mobile.AllowMovableDirectionalLights:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.MobileNumDynamicPointLights:4]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.MobileDynamicPointLightsUseStaticBranch:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.SkinCache.SceneMemoryLimitInMB:128.000000]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.GPUSkin.Limit2BoneInfluences:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.SupportDepthOnlyIndexBuffers:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.SupportReversedIndexBuffers:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[r.SupportMaterialLayers:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
+[2019.01.18-09.15.32:861][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.01.18-09.15.32:861][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
+[2019.01.18-09.15.32:861][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
+[2019.01.18-09.15.32:864][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.01.18-09.15.32:864][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.01.18-09.15.32:865][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.01.18-09.15.32:865][  0]LogInit: Selected Device Profile: [Windows]
+[2019.01.18-09.15.32:865][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.01.18-09.15.32:885][  0]LogHAL: Display: Platform has ~ 32 GB [34304196608 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
+[2019.01.18-09.15.32:885][  0]LogInit: Going up to parent DeviceProfile []
+[2019.01.18-09.15.32:885][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.01.18-09.15.32:885][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.01.18-09.15.32:886][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.01.18-09.15.32:887][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Scalability.ini]
+[2019.01.18-09.15.32:887][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.01.18-09.15.32:887][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.01.18-09.15.32:887][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.01.18-09.15.32:887][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.01.18-09.15.32:887][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Config/Windows/Engine.ini]
+[2019.01.18-09.15.32:887][  0]LogInit: Computer: DESKTOP-LLJMLRC
+[2019.01.18-09.15.32:887][  0]LogInit: User: VictorWeidar
+[2019.01.18-09.15.32:887][  0]LogInit: CPU Page size=4096, Cores=8
+[2019.01.18-09.15.32:887][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2019.01.18-09.15.32:888][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2019.01.18-09.15.32:888][  0]LogMemory: Platform Memory Stats for Windows
+[2019.01.18-09.15.32:888][  0]LogMemory: Process Physical Memory: 105.63 MB used, 105.63 MB peak
+[2019.01.18-09.15.32:888][  0]LogMemory: Process Virtual Memory: 91.50 MB used, 91.50 MB peak
+[2019.01.18-09.15.32:888][  0]LogMemory: Physical Memory: 4837.01 MB used,  27878.02 MB free, 32715.03 MB total
+[2019.01.18-09.15.32:888][  0]LogMemory: Virtual Memory: 4683.16 MB used,  134213048.00 MB free, 134217728.00 MB total
+[2019.01.18-09.15.32:902][  0]LogInit: Using OS detected language (en-US).
+[2019.01.18-09.15.32:902][  0]LogInit: Using OS detected locale (en-SE).
+[2019.01.18-09.15.32:902][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2019.01.18-09.15.33:226][  0]LogStreaming: Display: Took  0.323s to InitEngineTextLocalization.
+[2019.01.18-09.15.33:226][  0]LogInit: Setting process to per monitor DPI aware
+[2019.01.18-09.15.33:254][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.01.18-09.15.33:255][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.01.18-09.15.33:419][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.01.18-09.15.33:419][  0]LogD3D11RHI: D3D11 adapters:
+[2019.01.18-09.15.33:460][  0]LogD3D11RHI:    0. 'Radeon RX 580 Series' (Feature Level 11_0)
+[2019.01.18-09.15.33:460][  0]LogD3D11RHI:       8172/0/16357 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2019.01.18-09.15.33:461][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.01.18-09.15.33:462][  0]LogD3D11RHI:       0/0/16357 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.01.18-09.15.33:462][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.01.18-09.15.33:470][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.01.18-09.15.33:470][  0]LogD3D11RHI:     GPU DeviceId: 0x67df (for the marketing name, search the web for "GPU Device Id")
+[2019.01.18-09.15.33:470][  0]LogWindows: EnumDisplayDevices:
+[2019.01.18-09.15.33:471][  0]LogWindows:    0. 'Radeon RX 580 Series' (P:1 D:1)
+[2019.01.18-09.15.33:471][  0]LogWindows:    1. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.01.18-09.15.33:471][  0]LogWindows:    2. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.01.18-09.15.33:471][  0]LogWindows:    3. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.01.18-09.15.33:471][  0]LogWindows:    4. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.01.18-09.15.33:472][  0]LogWindows:    5. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.01.18-09.15.33:472][  0]LogWindows:    6. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.01.18-09.15.33:472][  0]LogWindows:    7. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.01.18-09.15.33:472][  0]LogWindows: DebugString: FoundDriverCount:8 
+[2019.01.18-09.15.33:472][  0]LogD3D11RHI:     Adapter Name: Radeon RX 580 Series
+[2019.01.18-09.15.33:472][  0]LogD3D11RHI:   Driver Version: Adrenalin 2019 18.12.3 (internal:25.20.15003.5010, unified:25.20.15003.5010)
+[2019.01.18-09.15.33:472][  0]LogD3D11RHI:      Driver Date: 12-17-2018
+[2019.01.18-09.15.33:472][  0]LogRHI: Texture pool is 5720 MB (70% of 8172 MB)
+[2019.01.18-09.15.33:530][  0]LogD3D11RHI: Async texture creation enabled
+[2019.01.18-09.15.33:541][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2019.01.18-09.15.33:800][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2019.01.18-09.15.33:813][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2019.01.18-09.15.33:826][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2019.01.18-09.15.33:843][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2019.01.18-09.15.33:863][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2019.01.18-09.15.33:876][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2019.01.18-09.15.33:890][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2019.01.18-09.15.33:904][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2019.01.18-09.15.33:911][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:993][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:994][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.18-09.15.33:995][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2019.01.18-09.15.34:061][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.01.18-09.15.34:061][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.01.18-09.15.34:087][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.01.18-09.15.34:087][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.01.18-09.15.34:099][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2019.01.18-09.15.34:112][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2019.01.18-09.15.34:124][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2019.01.18-09.15.34:137][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2019.01.18-09.15.34:182][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.01.18-09.15.34:182][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.01.18-09.15.34:182][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.01.18-09.15.34:228][  0]LogShaderCompilers: Guid format shader working directory is -45 characters bigger than the processId version (../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Intermediate/Shaders/WorkingDirectory/7712/).
+[2019.01.18-09.15.34:228][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Victor Weidar/AppData/Local/Temp/UnrealShaderWorkingDir/7B797F8E46EE48C6FCECF1B3DB4F98EF/'.
+[2019.01.18-09.15.34:230][  0]LogXGEController: Cleaning working directory: C:/Users/Victor Weidar/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.01.18-09.15.34:230][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.01.18-09.15.34:230][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.01.18-09.15.34:230][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.01.18-09.15.34:765][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.01.18-09.15.34:805][  0]LogDerivedDataCache: Loaded boot cache 0.04s 71MB C:/Users/Victor Weidar/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.01.18-09.15.34:805][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Victor Weidar/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
+[2019.01.18-09.15.34:805][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.01.18-09.15.34:805][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.01.18-09.15.34:805][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.01.18-09.15.34:805][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.01.18-09.15.34:817][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.01.18-09.15.34:817][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.01.18-09.15.34:817][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2019.01.18-09.15.34:829][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Victor Weidar/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.01.18-09.15.34:829][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.01.18-09.15.34:829][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.01.18-09.15.34:865][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.01.18-09.15.34:868][  0]LogSlate: Using FreeType 2.6.0
+[2019.01.18-09.15.34:869][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.01.18-09.15.34:947][  0]LogAssetRegistry: FAssetRegistry took 0.0333 seconds to start up
+[2019.01.18-09.15.35:270][  0]LogInit: Selected Device Profile: [Windows]
+[2019.01.18-09.15.35:390][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2019.01.18-09.15.35:392][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2019.01.18-09.15.35:392][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.01.18-09.15.35:392][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.01.18-09.15.35:392][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2019.01.18-09.15.35:402][  0]LogNetVersion: Project_Spellth 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 649626407)
+[2019.01.18-09.15.35:894][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.105924 seconds
+[2019.01.18-09.15.35:903][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
+[2019.01.18-09.15.35:903][  0]LogUObjectAllocator: 6914656 out of 0 bytes used by permanent object pool.
+[2019.01.18-09.15.35:903][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.01.18-09.15.36:628][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.01.18-09.15.36:642][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.01.18-09.15.37:217][  0]SourceControl: Source control is disabled
+[2019.01.18-09.15.37:822][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.01.18-09.15.37:898][  0]LogOcInput: OculusInput pre-init called
+[2019.01.18-09.15.38:043][  0]LogEngine: Initializing Engine...
+[2019.01.18-09.15.38:044][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.01.18-09.15.38:045][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.01.18-09.15.38:045][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.01.18-09.15.38:045][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.01.18-09.15.38:045][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.01.18-09.15.38:292][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.01.18-09.15.38:308][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.01.18-09.15.38:327][  0]LogInit: XAudio2 using '4 - 2460G4 (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.01.18-09.15.38:337][  0]LogInit: FAudioDevice initialized.
+[2019.01.18-09.15.38:337][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.01.18-09.15.38:415][  0]LogDerivedDataCache: Saved boot cache 0.08s 71MB C:/Users/Victor Weidar/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.01.18-09.15.38:424][  0]LogInit: Texture streaming: Enabled
+[2019.01.18-09.15.38:439][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.01.18-09.15.38:450][  0]LogInit: Transaction tracking system initialized
+[2019.01.18-09.15.38:468][  0]BlueprintLog: New page: Editor Load
+[2019.01.18-09.15.38:532][  0]LocalizationService: Localization service is disabled
+[2019.01.18-09.15.38:962][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Content/' took 0.02s
+[2019.01.18-09.15.38:962][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.01.18-09.15.38:962][  0]LogCook: Display: Mobile HDR setting 1
+[2019.01.18-09.15.38:962][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.01.18-09.15.38:962][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.01.18-09.15.38:963][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.01.18-09.15.38:963][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.01.18-09.15.38:963][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.01.18-09.15.39:109][  0]LightingResults: New page: Lighting Build
+[2019.01.18-09.15.39:113][  0]MapCheck: New page: Map Check
+[2019.01.18-09.15.39:113][  0]LightingResults: New page: Lighting Build
+[2019.01.18-09.15.39:546][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2019.01.18-09.15.39:560][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.01.18-09.15.39:603][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.01.18-09.15.39:603][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.158ms to complete.
+[2019.01.18-09.15.39:603][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.494
+[2019.01.18-09.15.39:706][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.01.18-09.15.39:712][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.01.18-09.15.39:718][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.01.18-09.15.39:724][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.01.18-09.15.39:730][  0]LogCollectionManager: Loaded 0 collections in 0.001357 seconds
+[2019.01.18-09.15.39:747][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/Collections/' took 0.01s
+[2019.01.18-09.15.39:747][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Content/Developers/VictorWeidar/Collections/' took 0.00s
+[2019.01.18-09.15.39:747][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Content/Collections/' took 0.00s
+[2019.01.18-09.15.39:747][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.01.18-09.15.39:762][  0]LogContentBrowser: Native class hierarchy populated in 0.0148 seconds. Added 2651 classes and 620 folders.
+[2019.01.18-09.15.39:769][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2019.01.18-09.15.39:770][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:770][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:771][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:771][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:771][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:772][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:772][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:773][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:773][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:773][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:774][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:774][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:774][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:775][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:775][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:775][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:776][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:776][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:777][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:777][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:777][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:778][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:778][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:778][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:779][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:779][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.18-09.15.39:810][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.01.18-09.15.39:820][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0004 seconds. Added 2 classes and 3 folders.
+[2019.01.18-09.15.39:828][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2019.01.18-09.15.39:840][  0]LogSlate: Took 0.000186 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.01.18-09.15.39:844][  0]LogSlate: Took 0.000243 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.01.18-09.15.39:852][  0]LogSlate: Took 0.000209 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.01.18-09.15.39:922][  0]LogRenderer: Reallocating scene render targets to support 1064x576 Format 10 NumSamples 1 (Frame:1).
+[2019.01.18-09.15.40:091][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.01.18-09.15.40:091][  0]LogLoad: (Engine Initialization) Total time: 9.25 seconds
+[2019.01.18-09.15.40:091][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.01.18-09.15.40:166][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.01.18-09.15.40:198][  0]LogSlate: Took 0.000157 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.01.18-09.15.40:372][  3]LogAssetRegistry: Asset discovery search completed in 5.4469 seconds
+[2019.01.18-09.15.40:373][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.01.18-09.15.40:373][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000030 seconds (updated 0 objects)
+[2019.01.18-09.15.41:685][  7]LogSlate: Took 0.000173 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.01.18-09.15.49:635][522]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.18-09.15.54:574][ 72]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/AnimStarterPack/Death_2.Death_2
+[2019.01.18-09.15.54:574][ 72]LogAnimationCompression: Recompressing (AnimSequence /Game/AnimStarterPack/Death_2.Death_2) using current/default (AnimCompress_BitwiseCompressOnly_15) bFirstRecompressUsingCurrentOrDefault(1) bTryAlternateCompressor(0) IsCompressedDataValid(0)
+[2019.01.18-09.15.54:677][ 72]LogSkeletalMesh: Building Skeletal Mesh SK_Mannequin...
+[2019.01.18-09.15.54:737][ 72]LogSkeletalMesh: Built Skeletal Mesh [0.06s] /Game/AnimStarterPack/UE4_Mannequin/Mesh/SK_Mannequin.SK_Mannequin
+[2019.01.18-09.15.54:745][ 72]LogMaterial: Display: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2019.01.18-09.15.54:858][ 72]LogMaterial: Display: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2019.01.18-09.15.54:937][ 72]LogShaderCompilers: Display: Shaders left to compile 128
+[2019.01.18-09.15.54:937][ 72]LogShaderCompilers: Display: Shaders left to compile 118
+[2019.01.18-09.15.54:937][ 72]LogShaderCompilers: Display: Shaders left to compile 108
+[2019.01.18-09.15.54:937][ 72]LogShaderCompilers: Display: Shaders left to compile 98
+[2019.01.18-09.15.54:937][ 72]LogShaderCompilers: Display: Shaders left to compile 88
+[2019.01.18-09.15.54:937][ 72]LogShaderCompilers: Display: Shaders left to compile 78
+[2019.01.18-09.15.54:937][ 72]LogShaderCompilers: Display: Shaders left to compile 68
+[2019.01.18-09.15.54:937][ 72]LogShaderCompilers: Display: Shaders left to compile 58
+[2019.01.18-09.15.54:937][ 72]LogShaderCompilers: Display: Shaders left to compile 48
+[2019.01.18-09.15.54:937][ 72]LogShaderCompilers: Display: Shaders left to compile 38
+[2019.01.18-09.15.54:937][ 72]LogShaderCompilers: Display: Shaders left to compile 28
+[2019.01.18-09.15.54:937][ 72]LogShaderCompilers: Display: Shaders left to compile 18
+[2019.01.18-09.15.57:033][193]LogShaderCompilers: Display: Shaders left to compile 136
+[2019.01.18-09.15.57:220][204]LogShaderCompilers: Display: Shaders left to compile 126
+[2019.01.18-09.15.57:252][206]LogShaderCompilers: Display: Shaders left to compile 116
+[2019.01.18-09.15.57:352][213]LogShaderCompilers: Display: Shaders left to compile 106
+[2019.01.18-09.15.57:443][219]LogShaderCompilers: Display: Shaders left to compile 96
+[2019.01.18-09.15.57:493][222]LogShaderCompilers: Display: Shaders left to compile 86
+[2019.01.18-09.15.57:566][227]LogShaderCompilers: Display: Shaders left to compile 76
+[2019.01.18-09.15.58:258][274]LogShaderCompilers: Display: Shaders left to compile 66
+[2019.01.18-09.15.58:557][291]LogShaderCompilers: Display: Shaders left to compile 56
+[2019.01.18-09.15.58:962][310]LogShaderCompilers: Display: Shaders left to compile 46
+[2019.01.18-09.15.59:113][317]LogShaderCompilers: Display: Shaders left to compile 36
+[2019.01.18-09.15.59:196][321]LogShaderCompilers: Display: Shaders left to compile 26
+[2019.01.18-09.15.59:279][325]LogShaderCompilers: Display: Shaders left to compile 16
+[2019.01.18-09.15.59:566][338]LogShaderCompilers: Display: Shaders left to compile 6
+[2019.01.18-09.18.22:437][493]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/ProjectSpellth/Blueprints/RangedWeaponBase.RangedWeaponBase
+[2019.01.18-09.18.22:855][493]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 117 classes and 0 folders.
+[2019.01.18-09.18.25:557][706]LogSlate: Window 'RangedWeaponBase' being destroyed
+[2019.01.18-09.18.26:736][838]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/ProjectSpellth/Blueprints/RangedWeaponBase.RangedWeaponBase
+[2019.01.18-09.18.27:114][838]LogSlate: Took 0.000142 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.01.18-09.18.29:154][ 44]LogSlate: Window 'RangedWeaponBase' being destroyed
+[2019.01.18-09.18.31:806][341]LogSavePackage: Moving '../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/RangedWeaponBase3DE46FCE4FA52743566C428D65836880.tmp' to '../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Content/ProjectSpellth/Blueprints/RangedWeaponBase.uasset'
+[2019.01.18-09.18.36:244][865]LogSlate: Took 0.007675 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2019.01.18-09.18.44:368][830]BlueprintLog: New page: Compile RangedWeaponBase
+[2019.01.18-09.18.45:197][897]LogSavePackage: Moving '../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Saved/RangedWeaponBase8EED922F4B2DB33484B44F8681807686.tmp' to '../../../../../../Users/Victor Weidar/Desktop/ProjectSpeallth/Project-Speallth/Project_Spellth 4.21/Content/ProjectSpellth/Blueprints/RangedWeaponBase.uasset'
+[2019.01.18-09.18.46:998][110]SourceControl: fatal: C:/Program Files/Epic Games/UE_4.21/Engine/Content: 'C:/Program Files/Epic Games/UE_4.21/Engine/Content' is outside repository
+[2019.01.18-09.18.55:349][110]LogSlate: Window 'Submit Files' being destroyed
+[2019.01.18-09.18.56:822][110]LogSourceControl: commit successful: [master c82920c] added animation pack
+[2019.01.18-09.18.56:888][110]SourceControl: [master c82920c] added animation pack
+[2019.01.18-09.18.56:888][110]SourceControl:  50 files changed, 0 insertions(+), 0 deletions(-)
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Aim_Space_Hip.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Aim_Space_Ironsights.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/BS_CrouchWalk.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/BS_Jog.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Idle_Rifle_Hip.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Idle_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Bwd_Rifle_Hip.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Bwd_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Fwd_Rifle_Hip.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Fwd_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Lt_Rifle_Hip.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Lt_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Rt_Rifle_Hip.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Rt_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_to_Stand_Rifle_Hip.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_to_Stand_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Death_1.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Death_2.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Death_3.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Death_Ironsights_1.uasset
+[2019.01.18-09.18.56:888][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Death_Ironsights_2.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Equip_Pistol_Standing.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Equip_Rifle_Standing.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Fire_Rifle_Hip.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Fire_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Fire_Shotgun_Hip.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Fire_Shotgun_Ironsights.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Hit_React_1.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Hit_React_2.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Hit_React_3.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Hit_React_4.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Idle_Pistol.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Idle_Rifle_Hip.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Idle_Rifle_Hip_Break1.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Idle_Rifle_Hip_Break2.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Idle_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jog_Bwd_Rifle.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jog_Fwd_Rifle.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jog_Lt_Rifle.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jog_Rt_Rifle.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jump_From_Jog.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jump_From_Stand.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jump_From_Stand_Ironsights.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Death_1.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Death_2.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Fire_1.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Fire_2.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Idle.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Reload_Rifle.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Reload_Shotgun.uasset
+[2019.01.18-09.18.56:889][110]SourceControl: [master 0e4ad60] added animation pack
+[2019.01.18-09.18.56:889][110]SourceControl:  Date: Fri Jan 18 10:18:56 2019 +0100
+[2019.01.18-09.18.56:889][110]SourceControl:  55 files changed, 0 insertions(+), 0 deletions(-)
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Aim_Space_Hip.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Aim_Space_Ironsights.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/BS_CrouchWalk.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/BS_Jog.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Idle_Rifle_Hip.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Idle_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Bwd_Rifle_Hip.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Bwd_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:889][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Fwd_Rifle_Hip.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Fwd_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Lt_Rifle_Hip.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Lt_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Rt_Rifle_Hip.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_Walk_Rt_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_to_Stand_Rifle_Hip.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Crouch_to_Stand_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Death_1.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Death_2.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Death_3.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Death_Ironsights_1.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Death_Ironsights_2.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Equip_Pistol_Standing.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Equip_Rifle_Standing.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Fire_Rifle_Hip.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Fire_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Fire_Shotgun_Hip.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Fire_Shotgun_Ironsights.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Hit_React_1.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Hit_React_2.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Hit_React_3.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Hit_React_4.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Idle_Pistol.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Idle_Rifle_Hip.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Idle_Rifle_Hip_Break1.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Idle_Rifle_Hip_Break2.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Idle_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jog_Bwd_Rifle.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jog_Fwd_Rifle.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jog_Lt_Rifle.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jog_Rt_Rifle.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jump_From_Jog.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jump_From_Stand.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Jump_From_Stand_Ironsights.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Death_1.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Death_2.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Fire_1.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Fire_2.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Idle.uasset
+[2019.01.18-09.18.56:890][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Reload_Rifle.uasset
+[2019.01.18-09.18.56:891][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_Reload_Shotgun.uasset
+[2019.01.18-09.18.56:891][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Prone_To_Stand.uasset
+[2019.01.18-09.18.56:891][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Reload_Pistol.uasset
+[2019.01.18-09.18.56:891][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Reload_Rifle_Hip.uasset
+[2019.01.18-09.18.56:891][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Reload_Rifle_Ironsights.uasset
+[2019.01.18-09.18.56:891][110]SourceControl:  create mode 100644 Project_Spellth 4.21/Content/AnimStarterPack/Reload_Shotgun_Hip.uasset
+[2019.01.18-09.18.56:895][110]SourceControl: Commited [master c82920c] added animation pack.
